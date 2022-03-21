@@ -1,0 +1,10 @@
+#cont {
+    display: inline-block;
+    width: max-content;
+    padding: 10px;
+    white-space: pre-wrap;
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    background: #b9fcff;
+}

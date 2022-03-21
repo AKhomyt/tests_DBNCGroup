@@ -1,0 +1,105 @@
+#form {
+    display: grid;
+    background: #147DD9;
+    width: 827px;
+    height: 845px;
+    margin: 40px auto;
+    font: 26.6px Lato-Italic;
+    color: #fff;
+    grid-template-areas:
+            "name name"
+            "date country"
+            "school school"
+            "area area";
+    grid-template-columns: max-content max-content;
+    grid-auto-rows: max-content max-content max-content max-content;
+    justify-items: left;
+}
+#form div {
+    text-align: left;
+    position: relative;
+    left: 45px;
+}
+#form span {
+    margin-bottom: 11px;
+}
+#name {
+    margin-top: 27px;
+    grid-area: name;
+}
+#name input {
+    width: 714px;
+}
+#form input, #form textarea {
+    border: 2px solid rgba(255, 255, 255, 0.82);
+    background: transparent;
+    color: white;
+    resize: none;
+}
+#form input {
+    height: 64px;
+    font: 27px Lato-Regular;
+    left: 20px;
+    padding-left: 17px;
+}
+#date {
+    margin-right: 29px;
+    margin-top: 46px;
+    grid-template-columns: 66px 215px;
+    grid-template-areas:
+    "date1 date1"
+    "date2 date3";
+}
+#date input[type=date] {
+    width: 240px;
+    padding-left: 60px;
+}
+#date input[type=date]::inactive-selection {
+    background: red;
+}
+#date input[type=date]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    left: -7px;
+    color: transparent;
+    opacity: 1;
+    background: url('../../images/png-transparent-computer-icons-calendar-date-icon-miscellaneous-cdr-rectangle.png') no-repeat center;
+    background-size: 30px 30px;
+}
+#country {
+    grid-area: country;
+    margin-top: 46px;
+}
+#country input {
+    width: 382px;
+}
+#school {
+    grid-area: school;
+    margin-top: 59px;
+}
+#school input {
+    width: 714px;
+}
+#area {
+    grid-area: area;
+    margin-top: 46px;
+}
+#area textarea {
+    width: 702px;
+    height: 215px;
+    padding: 16px;
+    font: 27px Lato-Italic;
+}
+#form textarea::placeholder {
+    color: #6AAAEA;
+}
+form div * {
+    display: block;
+}
+@font-face {
+    font-family: Lato-Italic;
+    src: url("../../fonts/Lato-Italic.ttf");
+}
+@font-face {
+    font-family: Lato-Regular;
+    src: url("../../fonts/Lato-Regular.ttf");
+}

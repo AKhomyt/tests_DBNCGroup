@@ -1,0 +1,21 @@
+#cont {
+    border: 2px solid #000;
+    border-left: none;
+    border-right: none;
+    padding: 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cont div{
+    display: inline-block;
+    width: max-content;
+    padding: 10px;
+    white-space: pre-wrap;
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+}
+#cont div:nth-child(2n - 1){
+    background: #b9fcff;
+}

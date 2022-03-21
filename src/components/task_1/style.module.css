@@ -1,0 +1,14 @@
+#cont {
+    border: 2px solid #000;
+    border-left: none;
+    border-right: none;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+#cont input, #cont div {
+    width: 250px;
+    height: 35px;
+    font-size: 2rem;
+    margin: auto;
+}
